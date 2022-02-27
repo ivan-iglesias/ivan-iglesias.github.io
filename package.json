@@ -1,0 +1,28 @@
+{
+  "name": "ivan-iglesias.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Ivan Iglesias",
+  "license": "MIT",
+  "scripts": {
+    "css": "node-sass scss/app.scss -o assets/css/ --include-path node_modules --output-style compressed",
+    "css:watch": "node-sass scss/app.scss -o assets/css/ --source-map true -w",
+    "css-lint": "stylelint scss/",
+    "css-prefix": "postcss --replace assets/css/app.css --use autoprefixer --map",
+    "css-purge": "purgecss --keyframes --css assets/css/app.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
+    "build": "npm-run-all css css-prefix css-purge"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "node-sass": "^7.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.1.0",
+    "purgecss": "^4.1.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-twbs-bootstrap": "^2.2.4"
+  }
+}

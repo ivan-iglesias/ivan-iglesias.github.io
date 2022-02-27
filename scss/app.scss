@@ -1,0 +1,102 @@
+// Theme colours
+$theme-font: "Open Sans", sans-serif;
+$theme-font-size: 14px;
+$theme-color-primary: rgb(32, 121, 182);
+$theme-text-color-primary: #1d1d1d;
+$theme-text-color-secondary: lighten($theme-text-color-primary, 15%);
+
+// Override Bootstrap variables
+$gray-100: lighten($theme-text-color-primary, 60%);
+$gray-200: lighten($theme-text-color-primary, 55%);
+$gray-300: lighten($theme-text-color-primary, 50%);
+$gray-400: lighten($theme-text-color-primary, 45%);
+$gray-500: lighten($theme-text-color-primary, 40%);
+$gray-600: lighten($theme-text-color-primary, 30%);
+$gray-700: lighten($theme-text-color-primary, 20%);
+$gray-800: lighten($theme-text-color-primary, 10%);
+$gray-900: $theme-text-color-primary;
+
+// Override BS5 sass color
+$primary: $theme-color-primary;
+$secondary: $theme-text-color-secondary;
+
+// Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  //background-color: $theme-color-primary;
+  font-family: $theme-font;
+  font-size: $theme-font-size;
+  opacity: 1;
+}
+
+// Container styles
+.c-container {
+  background-color: rgb(255, 255, 255);
+
+  @include media-breakpoint-up(lg) {
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0);
+  }
+}
+
+// Left section styles
+.c-image {
+  position: relative;
+
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 25%;
+
+
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      height: auto;
+      border-radius: 0%;
+    }
+  }
+
+  .c-text {
+    margin: 1rem 0rem;
+    margin-left: 1rem;
+    color: rgb(0, 0, 0);
+
+    @include media-breakpoint-up(sm) {
+      position: absolute;
+      top: 25%;
+      left: 45%;
+    }
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 0;
+    }
+
+    h1 {
+      font-size: $theme-font-size * 2.5;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: $theme-font-size * 2 - 4;
+      font-weight: 500;
+    }
+  }
+}
+
+// Right section styles
+.c-card {
+  background: rgb(249, 249, 249);
+  border-left-color: $theme-color-primary;
+  border-left-width: 4px;
+}
+
+.c-progress {
+  height: 5px;
+  background-color: lightgray;
+  border-radius: 0px !important;
+}
