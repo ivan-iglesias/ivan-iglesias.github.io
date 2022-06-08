@@ -2,13 +2,13 @@
 <html lang="es">
 
 <head>
-    <title>CV - Iván Iglesias de Lama</title>
+    <title>Iván Iglesias de Lama</title>
 
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Tarjeta de presentación de Iván Iglesias, programador senior.">
 	<meta name="author" content="Iván Iglesias de Lama">
 
     <!-- Fonts -->
@@ -17,89 +17,102 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-	<!-- Theme CSS -->
+    <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
     <div class="container-lg c-container my-lg-5">
         <div class="row">
 
-            <div class="col-md-4 py-4 p-md-0 text-center text-sm-start c-image">
-                <img src="assets/images/ivan.iglesias.small.jpg" alt="ivan iglesias photo">
+            <div class="col-md-4 py-5 text-center c-image">
+                <img src="assets/images/ivan.iglesias.jpg" alt="Foto Ivan Iglesias">
 
-                <div class="c-text">
+                <div class="c-text py-4">
                     <h1>Iván Iglesias</h1>
                     <h2>Programador Senior</h2>
                 </div>
+
+                <!-- Contact -->
+                <section class="p-2">
+                    <a
+                        href="https://github.com/ivan-iglesias"
+                        class="btn btn-outline-secondary"
+                        style="border-radius: 50%;"
+                        target="_blank"
+                    >
+                        <span class="bi bi-github"></span>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/ivan-iglesias"
+                        class="btn btn-outline-secondary"
+                        style="border-radius: 50%;"
+                        target="_blank"
+                    >
+                        <span class="bi bi-linkedin"></span>
+                    </a>
+                </section>
             </div>
 
-            <div class="col-md-8 py-4">
+            <div class="col-md-8 py-5">
 
-                <div>
-                    <div class="alert alert-danger" role="alert">
-                        EN DESARROLLO
-                      </div>
-                </div>
+                <!-- About me
+                <section>
+                    <h3>Sobre mí</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deserunt fugiat rerum repudiandae similique asperiores hic fugit atque aspernatur? Quae dignissimos natus officiis facere repellat architecto ipsum repudiandae corrupti officia.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati natus cumque explicabo sunt minus voluptatem nulla, cum molestiae sed incidunt ipsum dicta velit modi perferendis laboriosam, eius corporis iusto. Harum?
+                    </p>
+                </section>
+                -->
 
-                <div class="card c-card">
-                    <div class="card-body">
-                      <h5 class="card-title">Hola</h5>
-                      <p class="card-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deserunt fugiat rerum repudiandae similique asperiores hic fugit atque aspernatur? Quae dignissimos natus officiis facere repellat architecto ipsum repudiandae corrupti officia.
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati natus cumque explicabo sunt minus voluptatem nulla, cum molestiae sed incidunt ipsum dicta velit modi perferendis laboriosam, eius corporis iusto. Harum?
-                      </p>
+                <!-- Skills -->
+                <section class="py-4">
+                    <h3>Habilidades</h3>
+
+                    <h4>Técnicas</h4>
+                    <div class="skills">
+                        <p class="font-monospace">PHP, Symfony, Laravel, Redis, MySQL, PostgreSQL, Python</p>
+                        <p class="font-monospace">Javascript, Vue.js, HTML, CSS, Sass, Bootstrap</p>
+                        <p class="font-monospace">Git, Docker, Linux, VBA</p>
+                        <p class="font-monospace">API Rest, Test Driven Development (TTD)</p>
                     </div>
+
+                    <h4 class="pt-3">Transversales</h4>
+                    <p> Responsable, Comprometido, Autonomo, Trabajo en equipo, Autodidacta</p>
+                </section>
+
+                <!-- Projects -->
+                <hr>
+                <section class="py-4">
+                    <ul class="c-projects">
+                        <li>
+                            <a target="_blank" href="https://www.euskaltel.com/">
+                                <img src="assets/images/euskaltel.png" alt="Icono Euskaltel">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://virgintelco.es">
+                                <img src="assets/images/virgin.png" alt="Icono Virgintelco">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://3dbconsult.com/real-time-network-performance-monitoring-rtpm">
+                                <img src="assets/images/rtpm.png" alt="Icono 3dB Consult RTPM">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.ctb.eus/es/como-funciona-barik">
+                                <img src="assets/images/barik.png" alt="Icono Barik">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+
+                <!-- Footer -->
+                <div class="text-end">
+                    Información detallada en <a href="https://www.linkedin.com/in/ivan-iglesias" target="_blank">linkedin</a>
                 </div>
-
-                <div class="row pt-4">
-                    <div class="col-lg-6">
-
-                        <div class="py-2">
-                            <strong>PHP</strong>
-                            <div class="progress c-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <strong>PHP</strong>
-                            <div class="progress c-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <strong>PHP</strong>
-                            <div class="progress c-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="py-2">
-                            <strong>PHP</strong>
-                            <div class="progress c-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <strong>PHP</strong>
-                            <div class="progress c-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <strong>PHP</strong>
-                            <div class="progress c-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="py-4 text-end">
-                    <a href="https://github.com/ivan-iglesias" class="btn btn-outline-secondary" style="border-radius: 50%;"><span class="bi bi-github"></span></a>
-                    <a href="https://www.linkedin.com/in/ivan-iglesias" class="btn btn-outline-secondary" style="border-radius: 50%;"><span class="bi bi-linkedin"></span></a>
-                </div>
-
             </div>
         </div>
     </div>
