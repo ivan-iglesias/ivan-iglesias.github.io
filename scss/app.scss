@@ -1,7 +1,7 @@
 // Theme colours
 $theme-font: "Open Sans", sans-serif;
 $theme-font-size: 14px;
-$theme-color-primary: rgb(32, 121, 182);
+$theme-color-primary: #12659f;
 $theme-text-color-primary: #1d1d1d;
 $theme-text-color-secondary: lighten($theme-text-color-primary, 15%);
 
@@ -42,18 +42,6 @@ h2 {
   color: $gray-800;
 }
 
-h3 {
-  margin-bottom: 1rem;
-  font-size: $theme-font-size * 1.5;
-  font-weight: 700;
-}
-
-h4 {
-  margin-bottom: .6rem;
-  font-size: $theme-font-size * 1.2;
-  color: $gray-500;
-}
-
 // Container styles
 .c-container {
   background-color: rgb(255, 255, 255);
@@ -91,23 +79,25 @@ h4 {
   background: rgb(249, 249, 249);
   border-left-color: $theme-color-primary;
   border-left-width: 4px;
-}
+  margin-bottom: 1.5rem;
 
-.c-projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: none;
+  .card-title {
+    margin-bottom: 1.5rem;
+  }
 
-  li {
-    margin: 10px 15px;
-    direction: row;
-    list-style-type: none;
+  .card-text {
+    margin-bottom: .5rem;
+  }
+
+  .sub-title {
+    margin-bottom: .6rem;
+    font-size: $theme-font-size * 1.2;
+    color: $gray-500;
   }
 }
 
-.skills {
-  p {
-    margin-bottom: .5rem;
+.c-contact {
+  a {
+    margin-left: 5px;
   }
 }
