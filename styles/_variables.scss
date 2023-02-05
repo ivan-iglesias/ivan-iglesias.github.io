@@ -1,0 +1,15 @@
+:root {
+  color-scheme: light;
+
+  --color-background: #fff;
+  --color-text: black;
+  --color-link: #7ee617;
+  --font-size: 14px;
+}
+
+:root.dark {
+  color-scheme: dark;
+
+  --color-background: #222;
+  --color-text: white;
+}
