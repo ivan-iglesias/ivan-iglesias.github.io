@@ -6,11 +6,11 @@
   "license": "MIT",
   "scripts": {
     "watch": "node-sass styles/ -o assets/css/ --source-map true -w",
-    "css-lint": "stylelint styles/",
+    "lint": "stylelint styles/",
     "css": "node-sass styles/app.scss -o assets/css/ --include-path node_modules --output-style compressed",
     "css-purge": "purgecss --keyframes --css assets/css/app.css --content index.html --output assets/css/",
     "css-prefix": "postcss --replace assets/css/app.css --use autoprefixer",
-    "build": "npm-run-all css-lint css css-purge css-prefix"
+    "build": "npm-run-all lint css css-purge css-prefix"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

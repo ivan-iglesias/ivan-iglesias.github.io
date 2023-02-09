@@ -40,7 +40,7 @@ h1 {
 h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 a {
@@ -62,7 +62,7 @@ section {
   padding-bottom: 3rem;
 
   @media screen and (min-width: 480px) {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -96,10 +96,24 @@ footer {
   flex-direction: row;
   gap: 1.5rem;
   margin: 1.5rem 0;
+
+  @media screen and (min-width: 480px) {
+    margin: unset;
+  }
 }
 
 .icon {
   width: 1.5rem;
   height: 1.5rem;
   fill: #d5d5d5;
+}
+
+.project {
+  &__header {
+    margin-bottom: 1rem;
+  }
+
+  &__content {
+    margin-bottom: 2rem;
+  }
 }
